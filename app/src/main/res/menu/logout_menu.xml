@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/logoutClick"
+            android:enabled="true"
+            android:src="@drawable/ic_baseline_login_24"
+            android:title="Logout"/>
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutJournal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="12dp"
+    android:background="@drawable/linear_layout_background"
+    android:orientation="vertical">
+
+    <!--This is the XML file to hold some journal detail and display on the
+                dashboard page-->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageJournal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="false"
+        android:visibility="gone"/>
+
+    <!--section for title-->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:includeFontPadding="false"
+        android:textColor="#267163"
+        android:textSize="17sp"
+        />
+
+    <!--section for description-->
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins_light"
+        android:includeFontPadding="false"
+        android:textColor="#267163"
+        android:inputType="text"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"/>
+
+    <!--section for date-->
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:includeFontPadding="false"
+        android:textColor="#267163"
+        android:textSize="7dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</LinearLayout>

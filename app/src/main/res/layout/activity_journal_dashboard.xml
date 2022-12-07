@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".journal.JournalDashboard">
+
+    <!--This is the XML file for Journal Dashboard-->
+    <TextView
+        android:id="@+id/myNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15.7dp"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="false"
+        android:text="@string/myJournal"
+        android:textColor="#267163"
+        android:textSize="27.76sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="12dp"
+        />
+
+    <!--This is section of logout while clicking here menu will popup where logout option will seen -->
+    <ImageView
+        android:id="@+id/logoutClick"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        android:layout_marginTop="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:tint="#267163"
+        android:layout_marginLeft="225dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/myNotes"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/myNotes"
+        />
+
+    <!--This is the section for searching note on journal-->
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bacground_search"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/myNotes">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_search_24"
+            app:tint="#267163" />
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="12dp"
+            android:background="@null"
+            android:fontFamily="@font/poppins_light"
+            android:hint="@string/search_notes"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:textColor="#267163"
+            android:textColorHint="#267163"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+    <!--This is the section where all journal will be located according to ID-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:clipToPadding="false"
+        android:paddingStart="0dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/layoutQuickAction"
+        app:layout_constraintTop_toBottomOf="@id/layoutSearch"/>
+
+    <!--This is the navigation bar to go to location and calender page -->
+    <LinearLayout
+        android:id="@+id/layoutQuickAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#267163"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/DashHome"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_home_24"
+            android:layout_marginStart="65.70dp"
+            app:tint= "@color/white"/>
+        <ImageView
+            android:id="@+id/mapAddNote"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_location"
+            app:tint= "@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/calender1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_calendar_month_24"
+            app:tint= "@color/white"/>
+    </LinearLayout>
+
+    <!--This is the button when click, redirect to create journal page -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/app_name"
+        android:padding="15dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toTopOf="@id/layoutQuickAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#267163"
+        android:layout_margin="30dp"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

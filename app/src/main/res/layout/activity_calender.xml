@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".views.Calendar">
+
+    <!--This is the XML file for calender -->
+
+    <TextView
+        android:id="@+id/myNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15.7dp"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="false"
+        android:text="@string/myJournal"
+        android:textColor="#267163"
+        android:textSize="27.76sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="12dp"
+        />
+
+    <TextView
+        android:id="@+id/myMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25.7dp"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="false"
+        android:text="@string/calender"
+        android:textColor="#267163"
+        android:textSize="22.76sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/myNotes"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <!--This is the section for calender-->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="160dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <!--This is the section for navigation bar at the bottom of the page-->
+    <LinearLayout
+        android:id="@+id/layoutQuickAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#267163"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/DashHome"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="65.70dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/mapAddNote"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_location"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/calender1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_calendar_month_24"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

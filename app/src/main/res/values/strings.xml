@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">JourneyJournal</string>
+    <string name="registerhere">Don\'t have an account? Register here</string>
+    <string name="copyright">" © Level 6  Sec B"</string>
+    <string name="logo">Jouney Journal</string>
+    <string name="my_image_description">Logo</string>
+    <string name="login">Already Register? Login here.</string>
+    <string name="register">Sign Up</string>
+    <string name="title">Title</string>
+    <string name="sDescription">Short Description</string>
+    <string name="title1">Enter your Journal here</string>
+    <string name="titleHint">Title</string>
+    <string name="desc">Description</string>
+    <string name="yourLocation">Select your location</string>
+    <string name="save">Save</string>
+    <string name="memories">Create your memories for future</string>
+    <string name="Searchnotes">Search notes</string>
+    <string name="note_title">Title</string>
+    <string name="note_subtitle">Sub Title</string>
+    <string name="enter_description">Description</string>
+    <string name="select">Select</string>
+    <string name="choose_color">Choose color</string>
+    <string name="add_image">Add Image</string>
+    <string name="myJournal">My Journal</string>
+    <string name="search_notes">Search Journal</string>
+    <string name="delete_note">Delete Journal</string>
+    <string name="deletenote">Delete Note</string>
+    <string name="cancel_dialog">Cancel</string>
+    <string name="deleteJournal">Delete Journal ?</string>
+    <string name="journalDialog">Are you sure want to delete Journal ?</string>
+    <string name="dltJounal">Delete Journal</string>
+    <string name="Map">Map</string>
+    <string name="Location">Map</string>
+
+    <string name="login_shared_preference">com.ismt.journeyjournal_login_shared_preference"></string>
+    <string name="login_status_shared_preference">com.ismt.journeyjournal_login_status_shared_preference</string>
+    <string name="Logout">logout</string>
+    <string name="share">Share Journal</string>
+    <string name="pickDate">Pick Date</string>
+    <string name="calender">Calendar</string>
+    <string name="email">Email</string>
+
+</resources>
